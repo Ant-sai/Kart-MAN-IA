@@ -86,5 +86,5 @@ Donkeycar : 4.3.0
 ## Auteurs
 
 Si vous avez des questions vous pouvez contacter:
-- Ant-sai: https://github.com/Ant-sai/Kart-MANI-IA.git/Ant-sai
-- Indianat: https://github.com/Ant-sai/Kart-MANI-IA.git/contributors
+- Ant-sai: https://github.com/Ant-sai
+- Indianat: https://github.com/Indianaat
