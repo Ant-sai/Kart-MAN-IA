@@ -50,14 +50,20 @@ Nous allons maintenant mettre en place un environement python sur la raspberry p
 
 9: On récupère les fichiers depuis le git donkeycar :  ```git clone https://github.com/autorope/donkeycar
                                                         cd donkeycar
-                                                        git checkout master``` et on install les dépendances :
-                                                        ```pip install -e .[pi]
-pip install numpy --upgrade
+                                                        git checkout master``` 
 
-curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=1DCfoSwlsdX9X4E3pLClE1z0fvw8tFESP" > /dev/null
-CODE="$(awk '/_warning_/ {print $NF}' /tmp/cookie)"
-curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CODE}&id=1DCfoSwlsdX9X4E3pLClE1z0fvw8tFESP" -o tensorflow-2.2.0-cp37-cp37m-linux_armv7l.whl
-pip install tensorflow-2.2.0-cp37-cp37m-linux_armv7l.whl ``` 
+et on install les dépendances :
+                                                        
+```pip install -e .[pi] ```                                                        
+```pip install numpy --upgrade ```
+
+
+``` curl -sc /tmp/cookie "https://drive.google.com/uc?export=download&id=1DCfoSwlsdX9X4E3pLClE1z0fvw8tFESP" > /dev/null CODE="$(awk '/_warning_/ {print $NF}'/tmp/cookie)" ```
+
+```curl -Lb /tmp/cookie "https://drive.google.com/uc?export=download&confirm=${CODE}&id=1DCfoSwlsdX9X4E3pLClE1z0fvw8tFESP" -o tensorflow-2.2.0-cp37-cp37m-linux_armv7l.whl ```
+
+```pip install tensorflow-2.2.0-cp37-cp37m-linux_armv7l.whl ``` 
+
 
 10: vérifiez que l'installation est bien faite avec : ``` python -c "import tensorflow" ```
 
@@ -65,10 +71,15 @@ pip install tensorflow-2.2.0-cp37-cp37m-linux_armv7l.whl ```
 Super les installations sont fini !
 Maintenant nous allons créer notre application donkeycar.
 
-11: création du dossier ```donkey createcar --path ~/mycar```
+12: création du dossier ```donkey createcar --path ~/mycar```
 
-12: dans ce fichier vous pourrez modifier quelques propriétés de la voiture :```cd ~/mycar
+13: dans ce fichier vous pourrez modifier quelques propriétés de la voiture :```cd ~/mycar
 nano myconfig.py```
+
+Installation de l'environnement sur PC (Windows)
+
+Pour installer l'environnement vous pouvez suivre ce lien : https://docs.donkeycar.com/guide/host_pc/setup_windows/
+
 
 ## Démarrage
 Comment lancer les différents modèles pour lancer la voiture ?
