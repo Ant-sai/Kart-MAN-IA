@@ -27,8 +27,11 @@ Les étapes pour configurer la voiture
 L'installation de l'environement donkeycar :
 Cette installation doit être réalisé sur une raspberry.
  1: Flasher votre carte SD avec un nouvel OS Raspbian pour que celle-ci soit comme neuve ;)
+ 
  2: Vous devez ensuite établire une connexion SSH avec votre PI pour cela vous pouvez y acceder graphiquement dans vos paramètres.
+ 
  3: Une fois la connexion SSH établi vous pouvez connaitre votre adresse IP avec la commande : ```ping raspberrypi.local ```
+ 
  4: Maintenant que vous connaissez votre adresse ip vous pouvez installer des logiciels tel que putty ou visual studio code pour établir votre connexion
  5: Vous pouvez mettre à jour votre systeme avec ces 2 commandes :  ```sudo apt-get update``` ```sudo apt-get upgrade```
  6: (Option) changer le mot de passe dans le menu avec la commande: ``` sudo raspi-config ```
